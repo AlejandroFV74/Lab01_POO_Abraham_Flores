@@ -6,6 +6,7 @@ public class Calculadora {
         int opcion;
 
         do{
+            System.out.println("--------------------------------------");
             System.out.println("Bienvenido a la calculadora.");
             System.out.println("Seleccione una opción para continuar:");
             System.out.println("1. Sumar");
@@ -17,6 +18,7 @@ public class Calculadora {
             opcion = scanner.nextInt();
 
             switch (opcion){
+                // Código de suma
                 case 1:
                     System.out.println("Seleccione el primer número");
                     double numero1 = scanner.nextInt();
@@ -27,6 +29,7 @@ public class Calculadora {
                     break;
 
                 case 2:
+                    //Código de resta
                     System.out.println("Seleccione el primer número");
                     double minuendo = scanner.nextInt();
                     System.out.println("Seleccione el segundo número");
@@ -35,6 +38,7 @@ public class Calculadora {
                     System.out.println("La resta es: "+ resta);
                     break;
                 case 3:
+                    //Código de multiplicación
                     System.out.println("Seleccione el primer número");
                     double multi1 = scanner.nextInt();
                     System.out.println("Seleccione el segundo número");
@@ -43,6 +47,7 @@ public class Calculadora {
                     System.out.println("La multiplicación es: "+ mult);
                     break;
                 case 4:
+                    //Código de división
                     System.out.println("Seleccione el primer número");
                     double dividendo = scanner.nextInt();
                     System.out.println("Seleccione el segundo número");
@@ -52,8 +57,10 @@ public class Calculadora {
                     break;
                 case 5:
                     System.out.println("Saliendo del sistema...");
+                    break;
                 default:
                     System.out.println("Seleccione una opción válida");
+                    break;
             }
 
 
